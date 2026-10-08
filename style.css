@@ -145,14 +145,10 @@ img {
     top: 20px;
 }
 
-/* HEADER */
-.header {
-    position: fixed;
-    inset: 0 0 auto 0;
-    height: var(--header-height);
+/height: var(--header-height);
     z-index: 1000;
     background: rgba(5, 7, 11, 0.72);
-    border-bottom: 1px solid transparent;
+    : 1px  transparent;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
