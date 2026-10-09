@@ -145,7 +145,7 @@ img {
     top: 20px;
 }
 
-/.header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -1615,16 +1615,10 @@ body.light-mode .btn-primary {
     color: #FFFFFF;
 }
 
-body.light-mode .btn-primary:hover {
-    color: #FFFFFF;
+body.light-mode .btn-primary {
+    color: #17130B;
 }
 
-/* ACESSIBILIDADE: REDUZIR ANIMAÇÕES */
-@media (prefers-reduced-motion: reduce) {
-    .btn,
-    .about-card,
-    .area-card,
-    .project-card {
-        transition: none;
-    }
+body.light-mode .btn-primary:hover {
+    color: #17130B;
 }
