@@ -145,13 +145,25 @@ img {
     top: 20px;
 }
 
-/height: var(--header-height);
+/.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
     z-index: 1000;
-    background: rgba(5, 7, 11, 0.72);
-    : 1px  transparent;
+    background: rgba(11, 11, 11, 0.88);
+    border-bottom: 1px solid transparent;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+body.light-mode .header {
+    background: rgba(244, 239, 229, 0.92);
 }
 
 .light-mode .header {
@@ -1376,4 +1388,243 @@ img {
     border-radius: 50%;
     display: block;
     flex-shrink: 0;
+}
+
+/* ==========================================
+   ARMANDUS IMPERIUM
+   CORREÇÃO FINAL DA IDENTIDADE VISUAL
+   Preto + Dourado + Marfim
+   ========================================== */
+
+/* MENU DE NAVEGAÇÃO */
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text);
+    background: rgba(200, 169, 106, 0.10);
+}
+
+/* ETIQUETA DO HERO */
+.eyebrow {
+    background: rgba(200, 169, 106, 0.07);
+    border-color: var(--border-strong);
+}
+
+/* TÍTULOS COM DEGRADÊ DOURADO */
+.hero h1 span,
+.section-heading h2 span,
+.contact-content h2 span {
+    background: linear-gradient(
+        90deg,
+        var(--primary-2),
+        var(--primary),
+        var(--accent)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-primary {
+    color: #17130B;
+    background: linear-gradient(
+        135deg,
+        var(--primary-2),
+        var(--primary)
+    );
+    border-color: var(--primary);
+    box-shadow: 0 12px 30px rgba(200, 169, 106, 0.18);
+}
+
+.btn-primary:hover {
+    color: #17130B;
+    background: linear-gradient(
+        135deg,
+        var(--accent),
+        var(--primary-2)
+    );
+    box-shadow: 0 16px 38px rgba(200, 169, 106, 0.25);
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btn-secondary {
+    border-color: var(--border-strong);
+    background: var(--surface);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary);
+    background: var(--surface-hover);
+}
+
+/* EFEITOS LUMINOSOS DO HERO */
+.orb-one {
+    background: radial-gradient(
+        circle,
+        rgba(200, 169, 106, 0.22),
+        transparent 65%
+    );
+}
+
+.orb-two {
+    background: radial-gradient(
+        circle,
+        rgba(216, 190, 131, 0.14),
+        transparent 65%
+    );
+}
+
+/* CARTÃO PRINCIPAL */
+.main-card::before {
+    border-color: rgba(216, 190, 131, 0.18);
+}
+
+.card-glow {
+    background: rgba(200, 169, 106, 0.16);
+}
+
+.hero-logo {
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(200, 169, 106, 0.18);
+}
+
+/* CARTÕES FLUTUANTES */
+.floating-card {
+    background: rgba(24, 24, 24, 0.88);
+    border-color: var(--border);
+}
+
+body.light-mode .floating-card {
+    background: rgba(255, 252, 245, 0.94);
+}
+
+.floating-card i {
+    background: rgba(200, 169, 106, 0.12);
+    color: var(--primary-2);
+}
+
+/* SECÇÃO SOBRE */
+.about-section {
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(200, 169, 106, 0.035),
+        transparent
+    );
+}
+
+/* ÍCONES DOS CARTÕES */
+.icon-box,
+.area-icon {
+    color: var(--primary-2);
+    background: rgba(200, 169, 106, 0.10);
+    border-color: var(--border);
+}
+
+/* CARTÕES DAS ÁREAS */
+.area-card::before {
+    background: rgba(200, 169, 106, 0.10);
+}
+
+/* SECÇÃO DE PROJECTOS */
+.projects-section {
+    background: linear-gradient(
+        180deg,
+        rgba(200, 169, 106, 0.035),
+        transparent
+    );
+}
+
+/* PROJECTO EM DESTAQUE */
+.project-featured {
+    border-color: var(--border-strong);
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(200, 169, 106, 0.12),
+            transparent 35%
+        ),
+        var(--surface);
+}
+
+/* ETIQUETAS DOS PROJECTOS */
+.project-tag {
+    color: var(--primary-2);
+    background: rgba(200, 169, 106, 0.09);
+    border-color: var(--border);
+}
+
+/* SÍMBOLOS DOS PROJECTOS */
+.project-symbol {
+    color: var(--primary-2);
+    background: rgba(200, 169, 106, 0.10);
+    border-color: var(--border);
+}
+
+/* CAIXA DA VISÃO */
+.vision-box {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(200, 169, 106, 0.10),
+            transparent 30%
+        ),
+        var(--surface);
+}
+
+/* ÍCONE DA VISÃO */
+.quote-icon {
+    color: var(--primary-2);
+    background: rgba(200, 169, 106, 0.10);
+}
+
+/* ÍCONES DE CONTACTO */
+.contact-icon {
+    color: var(--primary-2);
+    background: rgba(200, 169, 106, 0.10);
+}
+
+/* CAMPOS DO FORMULÁRIO */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-2);
+    box-shadow: 0 0 0 3px rgba(200, 169, 106, 0.12);
+}
+
+/* BOTÃO DE VOLTAR AO TOPO */
+.back-to-top:hover {
+    color: var(--primary-2);
+    border-color: var(--primary);
+}
+
+/* LOGÓTIPO CIRCULAR NO CABEÇALHO E RODAPÉ */
+.brand img,
+.footer-brand .brand img {
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* TRANSIÇÕES DO TEMA CLARO */
+body.light-mode .btn-primary {
+    color: #FFFFFF;
+}
+
+body.light-mode .btn-primary:hover {
+    color: #FFFFFF;
+}
+
+/* ACESSIBILIDADE: REDUZIR ANIMAÇÕES */
+@media (prefers-reduced-motion: reduce) {
+    .btn,
+    .about-card,
+    .area-card,
+    .project-card {
+        transition: none;
+    }
 }
