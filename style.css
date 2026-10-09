@@ -1381,8 +1381,8 @@ body.light-mode .header {
 }
 .brand img,
 .footer-brand .brand img {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
