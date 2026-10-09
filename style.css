@@ -1367,3 +1367,13 @@ img {
         transform: none;
     }
 }
+.brand img,
+.footer-brand .brand img {
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    flex-shrink: 0;
+}
