@@ -1604,6 +1604,7 @@ body.light-mode .floating-card {
     width: 48px;
     height: 48px;
     aspect-ratio: 1 / 1;
+    
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -1622,3 +1623,6 @@ body.light-mode .btn-primary {
 body.light-mode .btn-primary:hover {
     color: #17130B;
 }
+
+
+/* ========================================= CORREÇÃO FINAL — IDENTIDADE ARMANDUS IMPERIUM Remover tons azuis e manter preto, dourado e marfim ========================================= */ /* Links */ a, a:visited { color: var(--primary); } a:hover, a:focus { color: var(--primary-2); } /* Menu de navegação */ .nav-link, .nav-link:visited { color: var(--text-soft); } .nav-link:hover, .nav-link.active { color: var(--primary-2); } /* Títulos */ h1, h2, h3, h4, h5, h6 { color: var(--text); } /* Textos destacados */ .eyebrow, .highlight, .text-highlight, .accent-text { color: var(--primary); } /* Ícones */ i, .icon { color: inherit; } /* Botões principais */ .btn-primary, .btn-primary:visited { color: #17130B; background: linear-gradient(135deg, var(--primary), var(--primary-2)); } /* Botões secundários */ .btn-secondary, .btn-secondary:visited { color: var(--primary); border-color: var(--primary); } /* Cores de links e destaques no modo claro */ body.light-mode a, body.light-mode a:visited { color: var(--primary); } body.light-mode .nav-link:hover, body.light-mode .nav-link.active { color: var(--primary); } /* Evitar seleção de texto azul */ ::selection { background: rgba(200, 169, 106, 0.35); color: var(--text); } 
